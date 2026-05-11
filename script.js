@@ -263,12 +263,9 @@
       }
 
       // ---------- ACCOUNT PAGE ----------
-      // REPLACE the entire renderAccountPage function with this enhanced version
-// LOCATION: Inside the script, replace lines where renderAccountPage is defined
-
-function renderAccountPage(container) {
-  if (userDetails && userDetails.firstName && userDetails.address) {
-    // ========== LOGGED IN - ENHANCED DASHBOARD ==========
+      function renderAccountPage(container) {
+            if (userDetails && userDetails.firstName && userDetails.address) {
+    // ========== LOGGED IN - =========
     const memberSince = new Date().getFullYear();
     const orderCount = JSON.parse(localStorage.getItem('vividOrderCount') || '0');
     
@@ -497,6 +494,19 @@ function renderAccountPage(container) {
             <option ${userDetails.state === 'Tamil Nadu' ? 'selected' : ''}>Tamil Nadu</option>
             <option ${userDetails.state === 'West Bengal' ? 'selected' : ''}>West Bengal</option>
             <option ${userDetails.state === 'Gujarat' ? 'selected' : ''}>Gujarat</option>
+            <option ${userDetails.state === 'Andhra Pradesh' ? 'selected' : ''}>Andhra Pradesh</option>
+            <option ${userDetails.state === 'Arunachal Pradesh' ? 'selected' : ''}>Arunachal Pradesh</option>
+            <option ${userDetails.state === 'Assam' ? 'selected' : ''}>Assam</option>
+            <option ${userDetails.state === 'Bihar' ? 'selected' : ''}>Bihar</option>
+            <option ${userDetails.state === 'Chhattisgarh' ? 'selected' : ''}>Chhattisgarh</option>
+            <option ${userDetails.state === 'Goa' ? 'selected' : ''}>Goa</option>
+            <option ${userDetails.state === 'Haryana' ? 'selected' : ''}>Haryana</option>
+            <option ${userDetails.state === 'Himachal Pradesh' ? 'selected' : ''}>Himachal Pradesh</option>
+            <option ${userDetails.state === 'Jharkhand' ? 'selected' : ''}>Jharkhand</option>
+            <option ${userDetails.state === 'Punjab' ? 'selected' : ''}>Punjab</option>
+            <option ${userDetails.state === 'Rajasthan' ? 'selected' : ''}>Rajasthan</option>
+            <option ${userDetails.state === 'Uttar Pradesh' ? 'selected' : ''}>Uttar Pradesh</option>
+            <option ${userDetails.state === 'Uttarakhand' ? 'selected' : ''}>Uttarakhand</option>
           </select>
         </div>
         <button class="save-btn-inline" id="saveAddressBtn">💾 Save Address</button>
@@ -555,7 +565,7 @@ function renderAccountPage(container) {
     container.querySelector('#backHomeAccEnhanced').addEventListener('click', () => showPage('mainPage'));
 
   } else {
-    // ========== LOGIN/SIGNUP VIEW (kept clean and professional) ==========
+    // ========== LOGIN/SIGNUP VIEW  ==========
     container.innerHTML = `
       <div class="auth-wrapper">
         <div class="auth-container">
