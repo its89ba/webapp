@@ -6,7 +6,7 @@
 
 DECORA ATELIER is a modern, fully responsive e-commerce web application for premium home decor products. Built with pure HTML, CSS, and JavaScript, it delivers a seamless shopping experience with cart management, user authentication, and order placement — all powered by localStorage.
 
-**Live Demo:**  https://webapp-beta-orpin.vercel.app/
+**Live Demo:**  https://webapp-eight-sand-89.vercel.app/
 
 ---
 
@@ -41,13 +41,12 @@ DECORA ATELIER is a modern, fully responsive e-commerce web application for prem
 - Fully responsive (mobile → desktop)
 - Premium typography (Playfair Display + Plus Jakarta Sans)
 
----
+
 
 ## 📁 Project Structure
- - FRONT
-   index.html
-   style.css
-   script.js
+ - index.html
+ - style.css
+ - script.js
  - IMAGES(contains 26 pictures)
  - README.md(thisfile)
 
